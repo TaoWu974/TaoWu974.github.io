@@ -3,7 +3,6 @@ layout: about
 title: About me
 permalink: /
 subtitle: <a href='https://www.gla.ac.uk/pgrs/taowu/'>University of Glasgow</a>. Univ Ave, Glasgow, UK, G12 8QQ.
-Existence precedes essence.
 
 profile:
   align: right
