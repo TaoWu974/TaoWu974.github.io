@@ -1,8 +1,9 @@
 ---
 layout: about
-title: about
+title: About me
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://www.gla.ac.uk/pgrs/taowu/'>University of Glasgow</a>. Univ Ave, Glasgow, UK, G12 8QQ.
+subtitle: Existence precedes essence.
 
 profile:
   align: right
