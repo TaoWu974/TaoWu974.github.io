@@ -1,70 +1,68 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
+    "name": "Tao Wu",
+    "email": "t.wu.1@research.gla.ac.uk",
+    "summary": "PhD student in RF & AI",
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "EM & RF, MathWorks",
+      "position": "Research Intern",
+      "startDate": "2025-06-16",
+      "endDate": "2025-09-19",
+      "summary": "Develop and study optimization techniques and large language models.",
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Glasgow & University of Electronic Science and Technology of China (UESTC)",
+      "location": "Chengdu, China",
+      "url": "https://www.gla.uestc.edu.cn",
+      "area": "Electronic Engineering",
+      "studyType": "BEng",
+      "startDate": "2018-09-01",
+      "endDate": "2022-06-30"
+    }
+    {
+      "institution": "Georgia Institute of Technology",
+      "location": "Atlanta, GA, United States",
+      "url": "https://cc.gatech.edu",
+      "area": "Computer Science (Specialization: machine learning)",
+      "studyType": "MS",
+      "startDate": "2022-08-21",
+      "endDate": "2023-08-05",
+      "score": "4.0/4.0",
+    }
+    {
+      "institution": "University of Glasgow",
+      "location": "Glasgow, United Kingdom",
+      "url": "https://www.gla.ac.uk/pgrs/taowu/",
+      "area": "Electronic Engineering",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2023-10-01",
+      "endDate": "2027-10-01",
+      "course": ["Optimisation Techniques for Microwave Antenna and Filter Design"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "MathWorks Industry Scholarship",
+      "date": "2023-10-01",
+      "awarder": "University of Glasgow",
+      "summary": "PhD funding"
+    },
+    {
+      "title": "Finalist",
+      "date": "2021-04-23",
+      "awarder": "Mathematical Contest in Modeling",
+      "url": "https://www.comap-math.org/mcm/2021Certs/2124506.pdf",
+      "summary": "Top 2% winner in Problem C (Data Insights)"
+    },
+    {
+      "title": "Scholarship for Academic Excellence",
+      "date": "2021-09-30",
+      "awarder": "University of Electronic Science and Technology of China",
     }
   ],
   "certificates": [
