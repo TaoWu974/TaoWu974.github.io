@@ -7,7 +7,7 @@ subtitle: <a href='https://www.gla.ac.uk/pgrs/taowu/'>James Watt School of Engin
 profile:
   align: right
   image: Selfish_Photo.jpeg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Room 528</p>
     <p>James Watt Building South</p>
