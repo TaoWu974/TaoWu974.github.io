@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm have started my PhD in Electronic Engineering at University of Glasgow, UK.
+I have started my PhD in Electronic Engineering at University of Glasgow, UK.
