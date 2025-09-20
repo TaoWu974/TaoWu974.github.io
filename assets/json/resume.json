@@ -2,7 +2,7 @@
   "basics": {
     "name": "Tao Wu",
     "email": "t.wu.1@research.gla.ac.uk",
-    "summary": "PhD student in RF & AI",
+    "summary": "PhD student in RF & AI"
   },
   "work": [
     {
@@ -10,7 +10,7 @@
       "position": "Research Intern",
       "startDate": "2025-06-16",
       "endDate": "2025-09-19",
-      "summary": "Develop and study optimization techniques and large language models.",
+      "summary": "Develop and study optimization techniques and large language models."
     }
   ],
   "education": [
@@ -32,7 +32,7 @@
       "studyType": "MS",
       "startDate": "2022-08-21",
       "endDate": "2023-08-05",
-      "score": "4.0/4.0",
+      "score": "4.0/4.0"
     },
     {
       "institution": "University of Glasgow & University of Electronic Science and Technology of China (UESTC)",
@@ -61,7 +61,7 @@
     {
       "title": "Scholarship for Academic Excellence",
       "date": "2021-09-30",
-      "awarder": "University of Electronic Science and Technology of China",
+      "awarder": "University of Electronic Science and Technology of China"
     }
   ],
   "certificates": [
