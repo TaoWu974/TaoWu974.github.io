@@ -8,6 +8,7 @@ profile:
   align: right
   image: Selfish_Photo.jpeg
   image_circular: true # crops the image to make it circular
+  image_size: 200px
   more_info: >
     <p>Room 528</p>
     <p>James Watt Building South</p>
