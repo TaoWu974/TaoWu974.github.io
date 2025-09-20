@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='https://www.gla.ac.uk/pgrs/taowu/'>James Watt School of Engineering, University of Glasgow</a>.
 
 profile:
-  align: right
+  align: left
   image: Selfish_Photo.jpeg
   image_circular: true # crops the image to make it circular
   image_size: 200px
