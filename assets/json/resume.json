@@ -15,14 +15,15 @@
   ],
   "education": [
     {
-      "institution": "University of Glasgow & University of Electronic Science and Technology of China (UESTC)",
-      "location": "Chengdu, China",
-      "url": "https://www.gla.uestc.edu.cn",
+      "institution": "University of Glasgow",
+      "location": "Glasgow, United Kingdom",
+      "url": "https://www.gla.ac.uk/pgrs/taowu/",
       "area": "Electronic Engineering",
-      "studyType": "BEng",
-      "startDate": "2018-09-01",
-      "endDate": "2022-06-30"
-    }
+      "studyType": "PhD",
+      "startDate": "2023-10-01",
+      "endDate": "2027-10-01",
+      "course": ["Optimisation Techniques for Microwave Antenna and Filter Design"]
+    },
     {
       "institution": "Georgia Institute of Technology",
       "location": "Atlanta, GA, United States",
@@ -32,16 +33,15 @@
       "startDate": "2022-08-21",
       "endDate": "2023-08-05",
       "score": "4.0/4.0",
-    }
+    },
     {
-      "institution": "University of Glasgow",
-      "location": "Glasgow, United Kingdom",
-      "url": "https://www.gla.ac.uk/pgrs/taowu/",
+      "institution": "University of Glasgow & University of Electronic Science and Technology of China (UESTC)",
+      "location": "Chengdu, China",
+      "url": "https://www.gla.uestc.edu.cn",
       "area": "Electronic Engineering",
-      "studyType": "PhD",
-      "startDate": "2023-10-01",
-      "endDate": "2027-10-01",
-      "course": ["Optimisation Techniques for Microwave Antenna and Filter Design"]
+      "studyType": "BEng",
+      "startDate": "2018-09-01",
+      "endDate": "2022-06-30"
     }
   ],
   "awards": [
