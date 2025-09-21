@@ -16,20 +16,20 @@
   "education": [
     {
       "institution": "University of Glasgow",
-      "location": "Glasgow, United Kingdom",
+      "location": "Glasgow, UK",
       "url": "https://www.gla.ac.uk/pgrs/taowu/",
       "area": "Electronic Engineering",
-      "studyType": "PhD",
+      "studyType": "Doctor of Philosophy",
       "startDate": "2023-10-01",
       "endDate": "2027-10-01",
       "course": ["Optimisation Techniques for Microwave Antenna and Filter Design"]
     },
     {
       "institution": "Georgia Institute of Technology",
-      "location": "Atlanta, GA, United States",
+      "location": "Atlanta, GA",
       "url": "https://cc.gatech.edu",
       "area": "Computer Science (Specialization: machine learning)",
-      "studyType": "MS",
+      "studyType": "Master of Science",
       "startDate": "2022-08-21",
       "endDate": "2023-08-05",
       "score": "4.0/4.0"
@@ -39,7 +39,7 @@
       "location": "Chengdu, China",
       "url": "https://www.gla.uestc.edu.cn",
       "area": "Electronic Engineering",
-      "studyType": "BEng",
+      "studyType": "Bachelor of Engineering (Honours)",
       "startDate": "2018-09-01",
       "endDate": "2022-06-30"
     }
@@ -50,6 +50,13 @@
       "date": "2023-10-01",
       "awarder": "University of Glasgow",
       "summary": "PhD funding"
+    },
+    {
+      "title": "Best paper",
+      "date": "2023-09-18",
+      "awarder": "The Services Society (S2)",
+      "url": "https://www.servicessociety.org/awards#scf2022",
+      "summary": "Best paper in EDGE 2022"
     },
     {
       "title": "Finalist",
@@ -67,88 +74,67 @@
   "certificates": [
     {
       "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "date": "2022-07-13",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/verify/U3PR32HMMBLC",
       "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "Deep Learning",
+      "date": "2022-07-13",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/WVLWKGFX8FMX",
+      "icon": "fa-solid fa-location-dot"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "An efficient method for complex digitally coded antenna design based on evolutionary computation and machine learning techniques",
+      "publisher": "IEEE",
+      "releaseDate": "2025-04-04",
+      "url": "https://eprints.gla.ac.uk/352578/",
+      "summary": "A new optimization method for pixelized antennas with a resolution of 2000 or higher."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "LEAM: A prompt-only large language model-enabled antenna modeling method",
+      "publisher": "arXiv",
+      "releaseDate": "2025-04-25",
+      "url": "https://arxiv.org/abs/2504.18271",
+      "summary": "The first large language model-enabled antenna modeling (LEAM) method."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "An efficient and general automated power amplifier design method based on surrogate model assisted hybrid optimization technique",
+      "publisher": "IEEE",
+      "releaseDate": "2024-12-31",
+      "url": "https://eprints.gla.ac.uk/329166/",
+      "summary": "Application of Bayesian neural network as a surrogate model for power amplifer design."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
+      "name": "Machine Learning",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Machine Learning",
+        "Deep Learning",
+        "Large Language Models",
+        "Torch"
+      ]
+    },
+    {
+      "name": "RF design",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Antennas",
+        "Microwave filters",
+        "Pixelized antennas",
+        "CST & HFSS"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -156,42 +142,6 @@
       "language": "English",
       "fluency": "Fluent",
       "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
