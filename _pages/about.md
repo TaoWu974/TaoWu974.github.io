@@ -8,7 +8,7 @@ profile:
   align: left
   image: Selfish_Photo.jpeg
   image_circular: true # crops the image to make it circular
-  image_size: 200px
+  image_size: 100px
   more_info: >
     <p>James Watt Building South</p>
     <p>Glasgow, UK, G12 8QQ</p>
