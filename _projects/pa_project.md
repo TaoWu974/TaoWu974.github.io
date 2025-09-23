@@ -23,7 +23,7 @@ Since Bayesian Neural Networks (BNNs) have demonstrated great success as surroga
 
 ### Implementation highlights
 
-**BNN surrogate models** are built locally for candidate designs, achieving up to 50× faster training compared to Gaussian Processes:contentReference[oaicite:1]{index=1}.  
+**BNN surrogate models** are built locally for candidate designs, achieving up to 50× faster training compared to Gaussian Processes.  
 
 ---
 
@@ -31,8 +31,8 @@ Since Bayesian Neural Networks (BNNs) have demonstrated great success as surroga
 
 E-GASPAD was validated on two challenging real-world cases:  
 
-- A **27–31 GHz class-AB PA**, where all specifications were met within ~516 simulations (~52 hours), compared to over 1000 simulations for prior methods.  
-- A **24–31 GHz wideband Doherty PA**, achieving stringent specs across 7 GHz bandwidth in ~574 simulations (~60 hours), demonstrating both speed and design quality:contentReference[oaicite:2]{index=2}.  
+- A **27–31 GHz class-AB PA**, where all 7 specifications were met within ~516 simulations (~52 hours), compared to over 1000 simulations for prior methods.  
+- A **24–31 GHz wideband Doherty PA**, achieving 10 stringent specs across 7 GHz bandwidth in ~574 simulations (~60 hours), demonstrating both speed and design quality.  
 
 Compared to traditional approaches, early trials show:  
 * **>2× faster convergence**  
