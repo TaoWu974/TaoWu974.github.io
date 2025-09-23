@@ -1,37 +1,44 @@
 ---
 layout: page
-title: Portfolio Analytics Platform
-description: Interactive dashboards and automated reports for institutional investors.
+title: Power amplifier design
+description: An optimization with a surrogate model of Bayesian neural network
 img: assets/img/publication_preview/PA.png
 importance: 1
 category: work
 ---
 
-The **Portfolio Analytics Platform (PA)** turns raw fund performance data into clear stories that support faster
-investment decisions. Built for research and strategy teams, the project focuses on delivering trustworthy metrics,
-sleek visualizations, and collaboration-friendly workflows in one place.
+The **Power Amplifier (PA)** has become a cornerstone in next-generation wireless systems. With mm-wave frequencies and wideband requirements, PA design is increasingly challenged by stringent specifications, large design spaces, and the computational burden of full-wave electromagnetic simulations.  
 
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/PA.png" alt="Overview mock-up of the Portfolio Analytics Platform" class="img-fluid rounded z-depth-1" %}
+Since Bayesian Neural Networks (BNNs) have demonstrated great success as surrogate models in antenna design by effectively replacing Gaussian Processes, it was natural for us to consider applying BNNs to PA design as well. This motivation led to the development of E-GASPAD.
+
+{% include figure.liquid loading="eager" path="assets/img/publication_preview/BNNStructure.png" alt="Overview mock-up of the Portfolio Analytics Platform" class="img-fluid rounded z-depth-1" %}
+
+---
 
 ### What makes it different
 
-* **Unified data processing:** Automated ingestion pipelines connect to custodians, benchmarks, and market data
-  providers, ensuring analysts always work with the latest numbers.
-* **Scenario planning:** Interactive modules let teams model allocations, stress-test macro scenarios, and instantly
-  share results as PDF or slide exports.
-* **Explainable insights:** Every chart highlights the drivers behind performance through built-in annotations,
-  sensitivity indicators, and links to the supporting research notes.
+* **BNN-powered surrogate modeling:** Unlike Gaussian Processes used in prior methods, Bayesian Neural Networks provide faster training and better scalability for high-dimensional design spaces while still offering uncertainty estimates.  
+
+---
 
 ### Implementation highlights
 
-1. A modular ETL architecture orchestrated through Airflow keeps the platform resilient when new data sources are
-   onboarded.
-2. React-based dashboards powered by D3 visualizations remain responsive on tablets used by traveling relationship
-   managers.
-3. Role-based access control integrates with the firm's SSO provider to balance transparency with compliance.
+**BNN surrogate models** are built locally for candidate designs, achieving up to 50× faster training compared to Gaussian Processes:contentReference[oaicite:1]{index=1}.  
+
+---
 
 ### Outcomes
 
-Early adopters reduced the time spent preparing quarterly review materials by more than 60%, freeing analysts to focus
-on uncovering new opportunities. The platform's transparency also helped win two new mandates during its pilot rollout
-thanks to clearer communication with prospective clients.
+E-GASPAD was validated on two challenging real-world cases:  
+
+- A **27–31 GHz class-AB PA**, where all specifications were met within ~516 simulations (~52 hours), compared to over 1000 simulations for prior methods.  
+- A **24–31 GHz wideband Doherty PA**, achieving stringent specs across 7 GHz bandwidth in ~574 simulations (~60 hours), demonstrating both speed and design quality:contentReference[oaicite:2]{index=2}.  
+
+Compared to traditional approaches, early trials show:  
+* **>2× faster convergence**  
+* **Robust handling of ~30 design variables**  
+* **First automated method effective across wideband, mm-wave, and complex PA topologies**  
+
+---
+
+E-GASPAD thus represents a leap forward in **AI-driven microwave circuit design**, balancing **optimization ability** and **efficiency** to deliver practical, high-performance PAs at scale.  
