@@ -110,9 +110,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-started-working-with-mathworks-as-a-research-intern",
           title: 'I have started working with MathWorks as a research intern.',
           description: "",
-          section: "News",},{id: "projects-power-amplifier-design",
-          title: 'Power amplifier design',
-          description: "An optimization with a surrogate model of Bayesian neural network",
+          section: "News",},{id: "projects-portfolio-analytics-platform",
+          title: 'Portfolio Analytics Platform',
+          description: "Interactive dashboards and automated reports for institutional investors.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pa_project/";
             },},{
