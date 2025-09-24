@@ -32,7 +32,10 @@ Since Bayesian Neural Networks (BNNs) have demonstrated great success as surroga
 E-GASPAD was validated on two challenging real-world cases:  
 
 - A **27–31 GHz class-AB PA**, where all 7 specifications were met within ~516 simulations (~52 hours), compared to over 1000 simulations for prior methods.  
+{% include figure.liquid loading="eager" path="assets/img/publication_preview/PA_Case_1.png" alt="Overview mock-up of the Portfolio Analytics Platform" class="img-fluid rounded z-depth-1" %}
+
 - A **24–31 GHz wideband Doherty PA**, achieving 10 stringent specs across 7 GHz bandwidth in ~574 simulations (~60 hours), demonstrating both speed and design quality.  
+{% include figure.liquid loading="eager" path="assets/img/publication_preview/PA.png" alt="Overview mock-up of the Portfolio Analytics Platform" class="img-fluid rounded z-depth-1" %}
 
 Compared to traditional approaches, early trials show:  
 * **>2× faster convergence**  
