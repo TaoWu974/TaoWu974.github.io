@@ -1,15 +1,17 @@
 ---
 layout: page
-title: Pixelated UWB Antenna Design
+title: Pixelated Antenna Design
 description: XGBoost surrogate–assisted 2-D GA for pixelated antennas
 img: assets/img/publication_preview/Pixelated_Antenna.png
 importance: 1
 category: work
 ---
 
-The **Pixelated Antenna** project shows how an **XGBoost surrogate** plus a **2-D, submatrix-crossover GA** speeds up pixelated antenna design. We learn the 0/1 → performance mapping, then spend EM time only on candidates that look promising.
+The **Pixelated Antenna Design** project shows how an **XGBoost surrogate** plus a **2-D, submatrix-crossover GA** speeds up pixelated antenna design. We learn the 0/1 → performance mapping, then spend EM time only on candidates that look promising.
 
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/Pixelated_Antenna.png" alt="Pixelated UWB antenna (hero demo)" class="img-fluid rounded z-depth-1" %}
+Only the first case study targets an ultra-wideband (UWB) antenna; the other examples focus on different application bands.
+
+{% include figure.liquid loading="eager" path="assets/img/publication_preview/Pixelated_Antenna.png" alt="Pixelated antenna (hero demo)" class="img-fluid rounded z-depth-1 mx-auto d-block" max-width="300px" %}
 
 ---
 
@@ -44,7 +46,7 @@ Pick parent pairs and a random rectangle; **swap the submatrices** to recombine 
 
 ### Outcomes
 
-**Example 1 — Full-pixel UWB (1920 pixels)**  
+**Example 1 — Full-pixel UWB design (1920 pixels)**  
 - Target: match or beat state-of-the-art UWB at the same footprint.  
 - Result: **2.9–13.6 GHz** with $\lvert S_{11}\rvert \le -10\,\text{dB}$; **min gain ≈ 2.64 dBi**, **min efficiency ≈ 80.7%**; simulation and measurement align.  
 {% include figure.liquid loading="eager" path="assets/img/publication_preview/UWB_original.jpg" alt="UWB baseline (demo)" class="img-fluid rounded z-depth-1" %}
@@ -58,7 +60,7 @@ Pick parent pairs and a random rectangle; **swap the submatrices** to recombine 
 - Specs: 1 GHz center, $\lvert S_{11}(1\,\text{GHz})\rvert \le -12\,\text{dB}$, efficiency $\ge 6\%$, **maximize bandwidth**.  
 - Result: **95 MHz** $(-3\,\text{dB})$ bandwidth, **≈ 6.38%** efficiency.  
 - Compute win: feasible design in **~1623 EM** sims on average; standard GA needed **8910** for feasibility and **72,900** to reach a comparable bandwidth.  
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/Pixelated_Antenna.png" alt="Pixelated antenna (demo)" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/publication_preview/Pixelated_Antenna.png" alt="Pixelated antenna (demo)" class="img-fluid rounded z-depth-1 mx-auto d-block" max-width="300px" %}
 
 ---
 
