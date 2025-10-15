@@ -24,6 +24,7 @@ Pixelization (digitally coded geometry) turns an antenna into an $m \times n$ bi
 ---
 
 ### Methodology
+The takeaway is that, instead of the popular convolution neural networks with tons of samples, we use a tree-based model to predict one antenna's performance with few samples, then iteratively searches over the binary design space and updates the model to refine its accuracy.
 
 1) **Geometry encoding**  
 An $m \times n$ 0/1 matrix defines the pixel mask over the design area.
