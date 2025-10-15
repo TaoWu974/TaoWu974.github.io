@@ -7,9 +7,7 @@ importance: 1
 category: work
 ---
 
-The **Pixelated Antenna Design** project shows how an **XGBoost surrogate** plus a **2-D, submatrix-crossover GA** speeds up pixelated antenna design. We learn the 0/1 → performance mapping, then spend EM time only on candidates that look promising.
-
-Only the first case study targets an ultra-wideband (UWB) antenna; the other examples focus on different application bands.
+The **Pixelated Antenna Design** project shows how an **XGBoost surrogate** plus a **2-D, submatrix-crossover GA** speeds up pixelated antenna design. XGBoost learns the 0/1s → performance mapping, then spend EM time only on candidates that look promising. This surrogate-assisted optimization approach makes **topology-free antenna design** a practical tool for discovering unconventional, high-performance structures.
 
 {% include figure.liquid loading="eager" path="assets/img/publication_preview/Pixelated_Antenna.png" alt="Pixelated antenna (hero demo)" class="img-fluid rounded z-depth-1 mx-auto d-block" max-width="300px" %}
 
