@@ -20,10 +20,6 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 3 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 Hi, I'm a third year PhD student in Electronic Engineering with James Watt School of Engineering, University of Glasgow, Scotland, UK, advised by [Prof. Bo Liu](https://www.gla.ac.uk/schools/engineering/staff/boliu/). I obtained a BEng degree in Electronic Engineering from University of Glasgow, a BEng degree in Electronic Engineering from UESTC, and an MS degree in Computer Science from Georgia Institute of Technology, Atlanta, GA. I have also worked at MathWorks as a research intern.
 
