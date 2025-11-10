@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have started working with MathWorks as a research intern.
+I have started working with MathWorks as a research intern till September.
