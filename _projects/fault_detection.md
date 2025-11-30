@@ -157,12 +157,8 @@ For systems like Roots Blowers, pumps, compressors, turbines—and high-value wa
 
 ## Conclusion
 
-Our Roots Blower case study demonstrates:
+- In this case, classical ML plus SPC logic raised credible early warnings (KNN led).  
+- Data-driven control (MPC/SPC) is becoming a practical bridge from detection to action in fabs and other assets.  
+- BNNs look promising for small-sample, uncertainty-aware decisions in yield-critical fabs (TSMC, SMIC), but remain an active area of applied research.  
 
-- Classical ML models can reliably detect faults **weeks in advance**
-- Hypothesis-testing-based SPC logic dramatically improves robustness
-- KNN performs exceptionally well for highly separable data
-- ML plays a central role in the future of **fault detection**, **MPC**, and **SPC** across sectors, including semiconductor manufacturing
-- Bayesian Neural Networks (BNNs) unlock **small-sample, uncertainty-aware prediction** for yield-critical fabs (TSMC, 中芯国际) and other capital-intensive assets, powering not just early fault detection but also MPC and SPC decisions with quantified risk
-
-As industrial AI moves toward predictive, self-healing systems—from rotating equipment to advanced fabs—methods like BNN-based fault detection and ML-augmented MPC/SPC control architectures will increasingly define the next generation of intelligent plants and high-volume manufacturing.
+Taken together, these tools suggest a measured path toward more robust, data-driven operations in the fabs.
