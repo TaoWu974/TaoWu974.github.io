@@ -116,7 +116,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-an-efficient-method-for-complex-digitally-coded-antenna-design-based-on-evolutionary-computation-and-machine-learning-techniques-has-been-online-this-paper-demonstrates-an-advancement-of-pixelated-antenna-design-in-resolution-i-e-more-than-2000-and-specifications-i-e-more-than-10",
           title: 'Our paper, An Efficient Method for Complex Digitally Coded Antenna Design Based on...',
           description: "",
-          section: "News",},{id: "projects-power-amplifier-design",
+          section: "News",},{id: "projects-from-fault-detection-to-data-driven-control-in-foundries",
+          title: 'From Fault Detection to Data-Driven Control in Foundries',
+          description: "How classical ML, SPC/MPC, and Bayesian neural networks power fault detection and data-driven control in semiconductor fabs",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/fault_detection/";
+            },},{id: "projects-power-amplifier-design",
           title: 'Power amplifier design',
           description: "An optimization with a surrogate model of Bayesian neural network",
           section: "Projects",handler: () => {
