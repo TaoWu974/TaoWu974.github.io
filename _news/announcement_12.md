@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We have launched the first large language model enabled antenna modeling (LEAM) open-source tool on [Github](https://github.com/TaoWu974/LEAM) and [arXiv](https://arxiv.org/abs/2504.18271).
+We have released the large language model enabled antenna modeling (LEAM) open-source tool on [GitHub](https://github.com/TaoWu974/LEAM) and [arXiv](https://arxiv.org/abs/2504.18271).

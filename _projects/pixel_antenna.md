@@ -1,69 +1,61 @@
 ---
-layout: page
+layout: research-note
 title: Pixelated Antenna Design
-description: XGBoost surrogate–assisted 2-D GA for pixelated antennas
-img: assets/img/publication_preview/Pixelated_Antenna.png
+description: Spatially aware evolutionary optimization of high-dimensional binary antenna layouts.
+img: assets/img/papers/dc-prototype.png
 importance: 1
 category: work
+topic: Antennas
+interactive: true
+paper_url: https://eprints.gla.ac.uk/352578/
 ---
 
-The **Pixelated Antenna Design** project shows how an **XGBoost surrogate** plus a **2-D, submatrix-crossover GA** speeds up pixelated antenna design. XGBoost learns the 0/1s → performance mapping, then spend EM time only on candidates that look promising. This surrogate-assisted optimization approach makes **topology-free antenna design** a practical tool for discovering unconventional, high-performance structures.
+DC-SADEA addresses a binary geometry problem: preserving useful spatial structure while searching thousands of antenna pixels. XGBoost predicts candidate performance; a bespoke 2-D crossover exchanges rectangular regions rather than flattened vector segments.
 
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/Pixelated_Antenna.png" alt="Pixelated antenna (hero demo)" class="img-fluid rounded z-depth-1 mx-auto d-block" max-width="300px" %}
+## Method
 
----
+{% include paper-method.liquid paper="dc-sadea" %}
 
-### Motivation
+## Prototype and validation
 
-Pixelization (digitally coded geometry) turns an antenna into an $m \times n$ binary grid (1 = metal, 0 = empty). That invites wild, high-performance shapes—but also **thousands of bits** and **expensive EM runs**. We propose:
+{% include paper-figure.liquid asset="dc-prototype.png" alt="Fabricated UWB antenna, front and back" caption="Fabricated prototype of the 1920-pixel UWB design." source="https://eprints.gla.ac.uk/352578/2/352578.pdf" number="6" %}
 
-- **XGBoost** as a fast, accurate surrogate for binary inputs and continuous EM metrics.  
-- A **2-D GA** with **submatrix crossover** that swaps rectangular pixel blocks—so useful geometric motifs survive recombination.  
-- **Surrogate-aware model management (SMAS)** to simulate only the most promising designs.
+<div class="paper-results"><div><strong>1920</strong><span>pixels in the UWB example</span></div><div><strong>2.9–13.6 GHz</strong><span>design operating band</span></div><div><strong>20 × 30 mm</strong><span>antenna footprint</span></div></div>
 
----
+{% include paper-figure.liquid asset="dc-uwb-validation.png" alt="Simulated and measured UWB reflection coefficient, gain and radiation efficiency" caption="Simulation–measurement comparison. Radiation efficiency was measured only up to 6 GHz because of equipment limitations." source="https://eprints.gla.ac.uk/352578/2/352578.pdf" number="7" %}
 
-### Methodology
-The takeaway is that, instead of the popular convolution neural networks with tons of samples, we use a tree-based model to predict one antenna's performance with few samples, then iteratively searches over the binary design space and updates the model to refine its accuracy.
+## Outdoor base-station antenna
 
-1) **Geometry encoding**  
-An $m \times n$ 0/1 matrix defines the pixel mask over the design area.
+The second DC-SADEA case uses a hybrid structure: conventional double-oval dipoles and a reflector are retained, while two feeding structures are digitally coded to improve matching and port isolation. The 1496-pixel design covers 3.3–3.8 GHz and 4.8–5.0 GHz with dual-linear polarization.
 
-2) **Surrogate modeling**  
-**XGBoost** drives the loop; **CART** and **GBDT** are shown only to explain the idea (single tree → boosted trees → XGBoost). Training updates online as new EM-validated samples arrive.
+<div class="paper-figure-grid">
+{% include paper-figure.liquid asset="dc-base-station-layout.png" alt="Outdoor base-station antenna geometry, double-oval dipoles and front/back pixel feeding regions" caption="5G outdoor base-station geometry and pixel-coded feeding regions." source="https://eprints.gla.ac.uk/352578/2/352578.pdf" number="8" %}
+{% include paper-figure.liquid asset="dc-base-station-prototype.png" alt="Fabricated outdoor base-station antenna, front and top views" caption="Fabricated base-station prototype: front and top views." source="https://eprints.gla.ac.uk/352578/2/352578.pdf" number="10" %}
+</div>
 
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/CART.jpg" alt="CART (background concept)" class="img-fluid rounded z-depth-1" %}
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/GBDT.png" alt="GBDT (background concept)" class="img-fluid rounded z-depth-1" %}
+## DC-SADEA evaluation cases
 
-3) **2-D GA with submatrix crossover**  
-Pick parent pairs and a random rectangle; **swap the submatrices** to recombine 2-D features. Then apply light mutation (rate $\approx 1/d$, with $d$ = number of pixels). Selection respects **performance + diversity** using a Z-scored **Hamming distance** to the current best—keeping the search curious, not myopic.
+| Case                       | Scope                          | Reported evidence                                         |
+| -------------------------- | ------------------------------ | --------------------------------------------------------- |
+| UWB antenna                | 1920 pixels                    | Simulated minimum gain 2.64 dBi; minimum efficiency 80.7% |
+| 5G base-station feeds      | 1496 pixels; 14 specifications | Matching and isolation over 3.3–3.8 and 4.8–5.0 GHz       |
+| Electrically small antenna | 270 pixels                     | 95 MHz simulated and 90 MHz measured −3 dB bandwidth      |
 
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/GA operators.png" alt="2-D GA: submatrix crossover & mutation" class="img-fluid rounded z-depth-1" %}
+For the small-antenna case, DC-SADEA reached feasibility in an average of 1623 EM evaluations over five runs. Standard GA used 8910 evaluations in its single run. These budgets describe this benchmark, not a universal speedup.
 
----
+## Related example: pixel-based parasitic loading
 
-### Outcomes
+A separate [EuCAP 2026 paper by Qiang Hua, Xinxin Liu, Mobayode O. Akinsolu, Xinrui Wang and Pavlos Lazaridis](https://eprints.gla.ac.uk/392790/) demonstrates another use of digital coding: keep a square-ring slot antenna fixed and optimize a pixelated parasitic region on either side of its microstrip feed. The paper describes a symmetric 24 × 24 binary pixel field, separated from the feed edge by 0.5 mm.
 
-**Example 1 — Full-pixel UWB design (1920 pixels)**  
-- Target: match or beat state-of-the-art UWB at the same footprint.  
-- Result: **2.9–13.6 GHz** with $\lvert S_{11}\rvert \le -10\,\text{dB}$; **min gain ≈ 2.64 dBi**, **min efficiency ≈ 80.7%**; simulation and measurement align.  
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/UWB_original.jpg" alt="UWB baseline (demo)" class="img-fluid rounded z-depth-1" %}
+<div class="paper-figure-grid equal-figures">
+{% include paper-figure.liquid asset="uwb-parasitic-pixel-field.png" alt="Binary parasitic pixel field on both sides of a microstrip feed" caption="Pixel-based parasitic region around the feed; the baseline geometry remains fixed." source="https://eprints.gla.ac.uk/392790/1/392790.pdf" number="3" %}
+{% include paper-figure.liquid asset="uwb-parasitic-optimized.png" alt="Optimized on/off metal pixel pattern beside the microstrip feed" caption="Optimized parasitic metal pattern reported using SADEA-VI." source="https://eprints.gla.ac.uk/392790/1/392790.pdf" number="4" %}
+</div>
 
-**Example 2 — 5G outdoor base-station (hybrid: conventional + pixelated feeds)**  
-- Pixelization only on the **dual feeds** (total **1496** pixels) to sharpen matching and isolation.  
-- Result: over **3.3–3.8 GHz** and **4.8–5.0 GHz**: $\max \lvert S_{11}\rvert, \max \lvert S_{22}\rvert \le -14\,\text{dB}$ and $\max \lvert S_{21}\rvert \le -25\,\text{dB}$, with stable patterns and gain.  
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/OB_feeding_structure.jpg" alt="OB feeding structure (demo)" class="img-fluid rounded z-depth-1" %}
+The authors report simulated and measured reflection coefficients meeting the −10 dB target across 3.1–10.6 GHz. Reported using **SADEA-VI**, this related application illustrates how pixel coding can refine a local parasitic region, as well as an entire radiator or a feeding structure.
 
-**Example 3 — Low-resolution ESA (270 pixels) study**  
-- Specs: 1 GHz center, $\lvert S_{11}(1\,\text{GHz})\rvert \le -12\,\text{dB}$, efficiency $\ge 6\%$, **maximize bandwidth**.  
-- Result: **95 MHz** $(-3\,\text{dB})$ bandwidth, **≈ 6.38%** efficiency.  
-- Compute win: feasible design in **~1623 EM** sims on average; standard GA needed **8910** for feasibility and **72,900** to reach a comparable bandwidth.  
-{% include figure.liquid loading="eager" path="assets/img/publication_preview/Pixelated_Antenna.png" alt="Pixelated antenna (demo)" class="img-fluid rounded z-depth-1 mx-auto d-block" max-width="300px" %}
+<p class="paper-source">Qiang Hua et al. <a href="https://eprints.gla.ac.uk/392790/">A Novel Digitally Coded Ultra-Wideband Antenna Optimized by SADEA-VI</a>. EuCAP 2026. Parasitic-structure figures are cropped from the accepted manuscript (Figs. 3 and 4), attributed under CC BY 4.0.</p>
 
----
-
-### Highlights
-
-- **XGBoost + 2-D GA** scales to **high-res binary** design while preserving spatial patterns.  
-- **Big EM savings** vs. brute-force GA+EM; strong results on UWB, base-station feeds, and ESA.  
-- **Drop-in workflow** for fully pixelated antennas or hybrid pixelated substructures across bands and specs.
+<details class="demo-disclosure"><summary>Explore the submatrix crossover</summary>
+{% include interactive-demo.liquid type="pixels" title="Preserve a spatial motif" description="A teaching example of rectangular crossover and mutation. It does not simulate antenna performance." %}
+</details>

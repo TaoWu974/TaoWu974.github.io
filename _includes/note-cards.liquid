@@ -1,0 +1,40 @@
+{% assign locale = page.lang | default: site.lang %}
+{% assign notes = site.data.notes %}
+{% if locale == 'zh-CN' %}{% assign notes = site.data.zh.notes %}{% endif %}
+<div class="note-grid">
+  {% for note in notes limit: include.limit %}
+    {% if include.projects
+      and note.kind == 'Explainer'
+      or include.projects
+      and note.kind == 'Project note'
+      or include.projects
+      and note.kind == '原理笔记'
+      or include.projects
+      and note.kind == '项目笔记'
+    -%}
+      {%- continue -%}
+    {%- endif %}
+    {% if include.standalone and note.kind != 'Explainer' and note.kind != 'Project note' and note.kind != '原理笔记' and note.kind != '项目笔记' -%}
+      {%- continue -%}
+    {%- endif %}
+    <a class="note-card" href="{{ note.url | localized_url: locale | relative_url }}" data-topic="{{ note.topic }}">
+      <div class="note-card-image">
+        {% assign note_image = note.image | prepend: '/assets/img/publication_preview/' %}
+        {% if note.image contains '/assets/' %}{% assign note_image = note.image %}{% endif %}
+        <img src="{{ note_image | relative_url }}" alt="" loading="lazy" width="480" height="240">
+      </div>
+      <div class="note-card-body">
+        <p class="eyebrow">
+          {{ note.topic_label | default: note.topic }}
+          <span> / {{ note.kind }}</span>
+        </p>
+        <h3>{{ note.title }}</h3>
+        <p>{{ note.description }}</p>
+        <span class="note-card-action">
+          {{- note.interactive }}
+          <span aria-hidden="true">↗</span></span
+        >
+      </div>
+    </a>
+  {% endfor %}
+</div>

@@ -60,6 +60,8 @@ on:
       - "!INSTALL.md"
       - "!README.md"
   workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
@@ -92,6 +94,7 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
+          bundle exec ruby _scripts/update_scholar.rb --previous-url https://taowu974.github.io/assets/json/scholar.json || echo "Scholar refresh unavailable; preserving the last successful snapshot."
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹

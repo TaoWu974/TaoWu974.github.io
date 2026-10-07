@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, Comparative genomics provides new insights into the evolution of Colletotrichum, has been online by Mycosphere. This is an interesting work to explore ML's application in taxonomy.
+Our paper, Comparative genomics provides new insights into the evolution of Colletotrichum, is now online in Mycosphere. This is an interesting study exploring ML's application in taxonomy.

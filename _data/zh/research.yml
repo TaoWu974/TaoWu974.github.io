@@ -1,0 +1,15 @@
+- title: 代理模型辅助优化
+  label: 方法
+  description: 面向仿真密集型设计的小样本建模与序贯优化。
+  url: /projects/pa_project/
+  detail: 贝叶斯神经网络 · 集成学习
+- title: 数字编码天线
+  label: 结构
+  description: 面向高维二进制几何的空间感知进化搜索。
+  url: /projects/pixel_antenna/
+  detail: 结构编码 · 拓扑优化
+- title: 大语言模型辅助建模
+  label: 工作流
+  description: 从文献描述与图像生成参数化模型及仿真脚本。
+  url: /projects/leam/
+  detail: 工程审查 · 人机协同

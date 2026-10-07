@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, Fair Food Delivery Trading System Based on Edge Computing and Stackelberg Game, has been accpeted by EDGE 2022!
+Our paper, Fair Food Delivery Trading System Based on Edge Computing and Stackelberg Game, has been accepted by EDGE 2022!

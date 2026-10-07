@@ -1,0 +1,4 @@
+# Local preview fallback when ImageMagick is unavailable.
+# Production CI retains the responsive image generation in _config.yml.
+imagemagick:
+  enabled: false

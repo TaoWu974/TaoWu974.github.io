@@ -1,75 +1,141 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
+{% assign locale = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[locale] %}
+{% assign research_areas = site.data.research %}
+{% if locale == 'zh-CN' %}{% assign research_areas = site.data.zh.research %}{% endif %}
+<div class="post research-home">
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+    <div class="intro-grid">
+      <header class="post-header">
+        <p class="eyebrow">{{ t.eyebrow }}</p>
+        <h1 class="post-title">
+          {% if locale == 'zh-CN' %}
+            {{ t.name }}
+          {% elsif site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+            {{ site.last_name }}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {{ site.title }}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+        </h1>
+        <p class="desc">{{ page.subtitle }}</p>
+        <p class="academic-role">{{ t.final_year }}</p>
+      </header>
 
-    <div class="clearfix">{{ content }}</div>
+      {% if page.profile %}
+        <div class="profile">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=t.name
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="intro-copy">
+        {{ content }}
+        <div class="link-row">
+          <a class="action-link primary" href="mailto:{{ site.data.socials.email }}">
+            {{- t.get_in_touch }}
+            <span aria-hidden="true">↗</span></a
+          >
+          <a class="action-link" href="{{ '/cv/' | localized_url: locale | relative_url }}">{{ t.view_cv }}</a>
+          <a class="text-link" href="{{ '/publications/' | localized_url: locale | relative_url }}">
+            {{- t.publications }}
+            <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section class="home-section" aria-labelledby="research-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="research-heading">{{ t.research_heading }}</h2>
+        </div>
+        <a href="{{ '/projects/' | localized_url: locale | relative_url }}">
+          {{- t.all_projects }}
+          <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="research-grid">
+        {% for area in research_areas %}
+          <a class="research-card" href="{{ area.url | localized_url: locale | relative_url }}">
+            <p class="eyebrow">{{ area.label }}</p>
+            <h3>{{ area.title }}</h3>
+            <p>{{ area.description }}</p>
+            <span class="research-detail">
+              {{- area.detail }}
+              <span aria-hidden="true">↗</span></span
+            >
+          </a>
+        {% endfor %}
+      </div>
+    </section>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="home-section news-section">
+        <h2>
+          <a href="{{ '/news/' | localized_url: locale | relative_url }}" style="color: inherit">{{ t.news }}</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | localized_url: locale | relative_url }}" style="color: inherit">{{ t.latest_posts }}</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="home-section">
+        <h2>
+          <a href="{{ '/publications/' | localized_url: locale | relative_url }}" style="color: inherit">{{ t.selected_publications }}</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
+
+    <section class="home-section" aria-labelledby="writing-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">{{ t.behind_papers }}</p>
+          <h2 id="writing-heading">{{ t.writing_heading }}</h2>
+        </div>
+        <a href="{{ '/blog/' | localized_url: locale | relative_url }}">
+          {{- t.all_notes }}
+          <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      {% include note-cards.liquid standalone=true %}
+    </section>
 
     <!-- Social -->
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
+        <div class="contact-note">{{ t.contact_note }}</div>
       </div>
     {% endif %}
 

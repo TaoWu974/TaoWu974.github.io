@@ -1,0 +1,18 @@
+{% assign locale = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[locale] %}
+<figure class="interactive-demo" data-demo="{{ include.type }}">
+  <div class="demo-header">
+    <p class="eyebrow">{{ t.demo_label }}</p>
+    <h2 data-toc-skip>{{ include.title }}</h2>
+    <p>{{ include.description }}</p>
+  </div>
+  <div class="demo-view" data-demo-view></div>
+  <div class="demo-controls" data-demo-controls></div>
+  <p class="demo-status" data-demo-status role="status" aria-live="polite"></p>
+  <figcaption>
+    {{ include.caption | default: t.demo_caption }}
+  </figcaption>
+  <noscript>
+    <p>{{ t.no_js }}</p>
+  </noscript>
+</figure>

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-In this summer, I will return MathWorks for internship. Happy to become MathWorker again!
+This summer, I will return to MathWorks for an internship. Happy to be a MathWorker again!

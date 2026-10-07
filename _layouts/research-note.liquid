@@ -1,0 +1,68 @@
+---
+layout: default
+---
+{% assign locale = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[locale] %}
+<div class="post research-note">
+  <header class="post-header">
+    {% if page.paper_url and page.standalone_note != true -%}
+      <a class="back-link" href="{{ '/projects/' | localized_url: locale | relative_url }}">← {{ t.all_projects }}</a>
+    {%- else -%}
+      <a class="back-link" href="{{ '/blog/' | localized_url: locale | relative_url }}">← {{ t.back_notes }}</a>
+    {%- endif %}
+    <p class="eyebrow">{{ page.note_type | default: 'Research walkthrough' }} · {{ page.topic }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+    <p class="reading-meta">
+      {% assign words = content | strip_html | number_of_words -%}
+      {%- assign minutes = words | divided_by: 180 | plus: 1 -%}
+      {%- if locale == 'zh-CN' -%}
+        {%- assign characters = content | strip_html | size -%}
+        {%- assign minutes = characters | divided_by: 450 | plus: 1 -%}
+      {%- endif -%}
+      {{- minutes }}
+      {{ t.read_time }}
+      {% if page.interactive -%}
+        <span aria-hidden="true">·</span> {{ t.interactive_included -}}
+      {%- endif %}
+    </p>
+    {% if page.paper_url or page.code_url %}
+      <div class="link-row">
+        {% if page.paper_url -%}
+          <a class="action-link" href="{{ page.paper_url }}">
+            {{- t.read_paper }}
+            <span aria-hidden="true">↗</span></a
+          >
+        {%- endif %}
+        {% if page.code_url -%}
+          <a class="action-link" href="{{ page.code_url }}">
+            {{- t.code }}
+            <span aria-hidden="true">↗</span></a
+          >
+        {%- endif %}
+      </div>
+    {% endif %}
+  </header>
+  <div class="reading-layout">
+    <aside class="reading-sidebar">
+      <nav aria-label="{{ t.on_this_page }}" data-note-toc>
+        <p class="eyebrow">{{ t.on_this_page }}</p>
+      </nav>
+    </aside>
+    <article class="note-content" data-note-content>
+      {{ content -}}
+      {%- include paper-source.liquid %}
+    </article>
+  </div>
+  <footer class="note-footer">
+    <h2>{{ t.keep_exploring }}</h2>
+    <p>
+      <a href="{{ '/blog/' | localized_url: locale | relative_url }}">{{ t.all_notes }} →</a> <span aria-hidden="true">·</span>
+      <a href="{{ '/publications/' | localized_url: locale | relative_url }}">{{ t.publications }} →</a>
+    </p>
+    <p>
+      {{ t.questions }}
+      <a href="mailto:{{ site.data.socials.email }}">{{ t.get_in_touch }}</a>
+    </p>
+  </footer>
+</div>

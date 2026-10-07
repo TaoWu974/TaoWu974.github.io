@@ -1,8 +1,9 @@
 {
   "basics": {
     "name": "Tao Wu",
-    "email": "t.wu.1@research.gla.ac.uk",
-    "summary": "PhD student in RF & AI"
+    "email": "Tao.Wu@glasgow.ac.uk",
+    "summary": "Final-year PhD student working on AI for RF design at the University of Glasgow.",
+    "url": "https://taowu974.github.io/"
   },
   "work": [
     {
@@ -89,47 +90,44 @@
   ],
   "publications": [
     {
+      "name": "Large Language Model-Based Intelligent Antenna Design System",
+      "publisher": "20th European Conference on Antennas and Propagation (EuCAP), IEEE",
+      "releaseDate": "2026-08-11",
+      "url": "https://doi.org/10.23919/EuCAP68105.2026.11612228",
+      "summary": "LLM-enabled antenna modeling and optimization with engineers in the loop; public toolkit: LEAM."
+    },
+    {
+      "name": "Integrated Multi-Band Photonic Filter Based on MRR–SSG for Tunable Frequency Hopping",
+      "publisher": "51st European Conference on Optical Communication (ECOC), IEEE",
+      "releaseDate": "2025-12-05",
+      "url": "https://doi.org/10.1109/ECOC66593.2025.11263410",
+      "summary": "Collaborative work on a thermally tunable photonic filter optimized with SaDE–SQP."
+    },
+    {
       "name": "An efficient method for complex digitally coded antenna design based on evolutionary computation and machine learning techniques",
       "publisher": "IEEE",
-      "releaseDate": "2025-04-04",
+      "releaseDate": "2025-10-14",
       "url": "https://eprints.gla.ac.uk/352578/",
       "summary": "A new optimization method for pixelized antennas with a resolution of 2000 or higher."
     },
     {
-      "name": "LEAM: A prompt-only large language model-enabled antenna modeling method",
-      "publisher": "arXiv",
-      "releaseDate": "2025-04-25",
-      "url": "https://arxiv.org/abs/2504.18271",
-      "summary": "The first large language model-enabled antenna modeling (LEAM) method."
-    },
-    {
       "name": "An efficient and general automated power amplifier design method based on surrogate model assisted hybrid optimization technique",
-      "publisher": "IEEE",
+      "publisher": "IEEE Transactions on Microwave Theory and Techniques, 73(2), 2025 (online December 2024)",
       "releaseDate": "2024-12-31",
       "url": "https://eprints.gla.ac.uk/329166/",
-      "summary": "Application of Bayesian neural network as a surrogate model for power amplifer design."
+      "summary": "Application of Bayesian neural network as a surrogate model for power amplifier design."
     }
   ],
   "skills": [
     {
       "name": "Machine Learning",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Machine Learning",
-        "Deep Learning",
-        "Large Language Models",
-        "Torch"
-      ]
+      "keywords": ["Machine Learning", "Deep Learning", "Large Language Models", "Torch"]
     },
     {
       "name": "RF design",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Antennas",
-        "Microwave filters",
-        "Pixelized antennas",
-        "CST & HFSS"
-      ]
+      "keywords": ["Antennas", "Microwave filters", "Pixelized antennas", "CST & HFSS"]
     }
   ],
   "languages": [

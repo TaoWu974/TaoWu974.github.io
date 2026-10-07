@@ -1,8 +1,8 @@
 {% capture footer_contents %}
   &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
+  {% if page.lang == 'zh-CN' %}{{ site.data.i18n['zh-CN'].name }}{% else %}{{ site.first_name }}
   {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
+  {{ site.last_name }}{% endif %}. {% if page.lang == 'zh-CN' %}使用 Jekyll 与 al-folio 构建，托管于 GitHub Pages。{% else %}{{ site.footer_text }}{% endif %}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}

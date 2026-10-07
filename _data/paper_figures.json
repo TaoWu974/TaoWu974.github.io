@@ -1,0 +1,131 @@
+[
+  {
+    "paper": "mrr-ssg",
+    "page": 1,
+    "figure": "1(a–f)",
+    "crop": [91, 548, 505, 708],
+    "asset": "assets/img/papers/photonic-optimization-overview.png",
+    "source": "https://eprints.gla.ac.uk/359591/2/359591.pdf"
+  },
+  {
+    "paper": "mrr-ssg",
+    "page": 1,
+    "figure": "1(c–f)",
+    "crop": [296, 550, 505, 708],
+    "asset": "assets/img/papers/photonic-phase-results.png",
+    "source": "https://eprints.gla.ac.uk/359591/2/359591.pdf"
+  },
+  {
+    "paper": "dc-sadea",
+    "page": 8,
+    "figure": "8",
+    "crop": [312, 185, 570, 375],
+    "asset": "assets/img/papers/dc-base-station-layout.png",
+    "source": "https://eprints.gla.ac.uk/352578/2/352578.pdf"
+  },
+  {
+    "paper": "dc-sadea",
+    "page": 9,
+    "figure": "10",
+    "crop": [69, 248, 282, 335],
+    "asset": "assets/img/papers/dc-base-station-prototype.png",
+    "source": "https://eprints.gla.ac.uk/352578/2/352578.pdf"
+  },
+  {
+    "paper": "dual-band-pixels",
+    "page": 2,
+    "figure": "3",
+    "crop": [373, 43, 481, 147],
+    "asset": "assets/img/papers/uwb-parasitic-pixel-field.png",
+    "source": "https://eprints.gla.ac.uk/392790/1/392790.pdf"
+  },
+  {
+    "paper": "dual-band-pixels",
+    "page": 3,
+    "figure": "4",
+    "crop": [111, 115, 219, 220],
+    "asset": "assets/img/papers/uwb-parasitic-optimized.png",
+    "source": "https://eprints.gla.ac.uk/392790/1/392790.pdf"
+  },
+  {
+    "paper": "edge-delivery",
+    "page": 4,
+    "figure": "1",
+    "crop": [78, 165, 375, 442],
+    "asset": "assets/img/papers/edge-delivery-system.png",
+    "source": "https://doi.org/10.1007/978-3-031-23470-5_2",
+    "edition": "Author-supplied published paper, EDGE 2022, LNCS 13732, pp. 18–31"
+  },
+  {
+    "paper": "dc-sadea",
+    "page": 7,
+    "figure": "6",
+    "crop": [318, 540, 558, 621],
+    "asset": "assets/img/papers/dc-prototype.png",
+    "source": "https://eprints.gla.ac.uk/352578/2/352578.pdf"
+  },
+  {
+    "paper": "dc-sadea",
+    "page": 8,
+    "figure": "7",
+    "crop": [48, 172, 300, 410],
+    "asset": "assets/img/papers/dc-uwb-validation.png",
+    "source": "https://eprints.gla.ac.uk/352578/2/352578.pdf"
+  },
+  {
+    "paper": "e-gaspad",
+    "page": 9,
+    "figure": "9",
+    "crop": [74, 177, 276, 317],
+    "asset": "assets/img/papers/pa-doherty-layout.png",
+    "source": "https://eprints.gla.ac.uk/329166/1/329166.pdf"
+  },
+  {
+    "paper": "e-gaspad",
+    "page": 8,
+    "figure": "7",
+    "crop": [312, 178, 564, 302],
+    "asset": "assets/img/papers/pa-convergence.png",
+    "source": "https://eprints.gla.ac.uk/329166/1/329166.pdf"
+  },
+  {
+    "paper": "e-gaspad",
+    "page": 9,
+    "figure": "10",
+    "crop": [312, 201, 564, 294],
+    "asset": "assets/img/papers/pa-doherty-response.png",
+    "source": "https://eprints.gla.ac.uk/329166/1/329166.pdf"
+  },
+  {
+    "paper": "lads",
+    "page": 4,
+    "figure": "5",
+    "crop": [382, 272, 483, 477],
+    "asset": "assets/img/papers/lads-h-slot.png",
+    "source": "https://eprints.gla.ac.uk/392786/1/392786.pdf"
+  },
+  {
+    "paper": "lads",
+    "page": 5,
+    "figure": "6",
+    "crop": [66, 49, 264, 345],
+    "asset": "assets/img/papers/lads-response.png",
+    "source": "https://eprints.gla.ac.uk/392786/1/392786.pdf"
+  },
+  {
+    "paper": "mrr-ssg",
+    "page": 2,
+    "figure": "2",
+    "crop": [316, 247.5, 524, 409],
+    "asset": "assets/img/papers/photonic-device.png",
+    "source": "https://eprints.gla.ac.uk/359591/2/359591.pdf"
+  },
+  {
+    "paper": "mrr-ssg",
+    "page": 3,
+    "figure": "4",
+    "crop": [94, 594, 518, 706],
+    "asset": "assets/img/papers/photonic-hopping.png",
+    "source": "https://eprints.gla.ac.uk/359591/2/359591.pdf"
+  }
+]

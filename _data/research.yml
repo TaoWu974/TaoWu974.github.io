@@ -1,0 +1,15 @@
+- title: Surrogate-assisted optimization
+  label: Methods
+  description: Bayesian neural networks and ensemble learning for simulation-intensive RF design.
+  url: /projects/pa_project/
+  detail: Small-data modeling
+- title: Digitally coded antennas
+  label: Structures
+  description: High-dimensional binary geometry with spatially aware evolutionary operators.
+  url: /projects/pixel_antenna/
+  detail: Topology optimization
+- title: LLM-enabled modeling
+  label: Workflows
+  description: From descriptions and reference figures to parameterized simulation models.
+  url: /projects/leam/
+  detail: Human-in-the-loop design

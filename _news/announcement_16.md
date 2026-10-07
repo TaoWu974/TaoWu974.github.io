@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-For ECOC 2025, I went Copenhagen and our paper, Integrated Multi-Band Photonic Filter Based on MRR–SSG for Tunable Frequency Hopping, was presented.
+For ECOC 2025, I went to Copenhagen and our paper, Integrated Multi-Band Photonic Filter Based on MRR–SSG for Tunable Frequency Hopping, was presented.

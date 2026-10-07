@@ -2,6 +2,7 @@
 layout: cv
 permalink: /cv/
 title: cv
+description: Final-year PhD in Electronic Engineering, University of Glasgow.
 nav: true
 nav_order: 5
 # cv_pdf: example_pdf.pdf # you can also use external links here

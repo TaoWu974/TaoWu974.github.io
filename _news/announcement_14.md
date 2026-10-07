@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, Integrated Multi-Band Photonic Filter Based on MRR–SSG for Tunable Frequency Hopping, has been accepted by European Conference on Optical Communication 2025 as an oral. This paper tells a story about optimization-based photonic design.
+Our paper, Integrated Multi-Band Photonic Filter Based on MRR–SSG for Tunable Frequency Hopping, has been accepted for an oral presentation at the European Conference on Optical Communication 2025. This paper tells a story about optimization-based photonic design.

@@ -1,10 +1,15 @@
+{% assign locale = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[locale] %}
+{% assign home_url = '/' | localized_url: locale %}
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
+      {% if page.permalink != home_url %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ home_url | relative_url }}">
+          {% if locale == 'zh-CN' %}
+            {{ t.name }}
+          {% elsif site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
                 {{- site.first_name -}}
@@ -47,10 +52,10 @@
           {% endfor %}
 
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
-              {% if page.permalink == '/' %}
+          <li class="nav-item {% if page.permalink == home_url %}active{% endif %}">
+            <a class="nav-link" href="{{ home_url | relative_url }}">
+              {{- t.about }}
+              {% if page.permalink == home_url %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,7 +64,8 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% assign p_locale = p.lang | default: site.lang %}
+            {% if p.nav and p.autogen == null and p_locale == locale %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -103,7 +109,7 @@
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
                   {%- elsif p.permalink contains '/blog/' -%}
-                    {%- assign url = '/blog/' -%}
+                    {%- assign url = '/blog/' | localized_url: locale -%}
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
@@ -117,6 +123,27 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <li class="nav-item">
+            {% if locale == 'zh-CN' %}
+              <a
+                class="nav-link language-switch"
+                href="{{ page.translation_url | default: '/' | relative_url }}"
+                lang="en"
+                hreflang="en"
+                aria-label="Switch to English"
+                >English</a
+              >
+            {% else %}
+              <a
+                class="nav-link language-switch"
+                href="{{ page.translation_url | default: '/zh/' | relative_url }}"
+                lang="zh-CN"
+                hreflang="zh-CN"
+                aria-label="切换到中文"
+                >中文</a
+              >
+            {% endif %}
+          </li>
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

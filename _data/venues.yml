@@ -7,3 +7,18 @@
 
 "Vision":
   color: "#009f36"
+"IEEE TAP":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8
+  color: "#176757"
+
+"IEEE TMTT":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=22
+  color: "#176757"
+
+"EuCAP":
+  url: https://www.eucap2026.org/
+  color: "#176757"
+
+"ECOC":
+  url: https://ecoc2025.org/
+  color: "#176757"

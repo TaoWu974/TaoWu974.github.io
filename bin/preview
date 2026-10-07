@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+preview_bundle=bundle
+if [[ -x vendor/ruby/bin/bundle ]]; then
+  preview_bundle=vendor/ruby/bin/bundle
+fi
+preview_config=_config.yml
+if ! command -v convert >/dev/null 2>&1; then
+  preview_config=_config.yml,bin/preview-config.yml
+fi
+
+JEKYLL_ENV=development "$preview_bundle" exec jekyll serve \
+  --config "$preview_config" --host 127.0.0.1 --port "${PORT:-4100}" "$@"

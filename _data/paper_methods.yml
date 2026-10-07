@@ -1,0 +1,75 @@
+edge-delivery:
+  en:
+    steps:
+      - [Observe, Current prices and purchase intentions]
+      - [Adjust the offer, DQN selects a small price change]
+      - [Buyer response, Restaurant updates its willingness to buy]
+      - [Learn from utility, Reward reflects the change in courier utility]
+    feedback: Updated prices and intentions feed the next round; the agent allocates the order after iteration.
+  zh-CN:
+    steps:
+      - [观察状态, 当前价格与购买意愿]
+      - [调整报价, DQN 选择小幅调价动作]
+      - [商家响应, 根据报价更新购买意愿]
+      - [效用反馈, 以骑手效用变化更新策略]
+    feedback: 新价格与购买意愿进入下一轮，迭代后由代理分配订单。
+dc-sadea:
+  en:
+    steps:
+      - [Binary geometry, Initial EM evaluations]
+      - [Spatial search, Population diversity + 2-D crossover]
+      - [XGBoost prediction, Rank new candidate layouts]
+      - [EM validation, Evaluate the best predicted candidate]
+    feedback: Each validated candidate updates the database for the next iteration.
+  zh-CN:
+    steps:
+      - [二进制几何, 初始电磁仿真]
+      - [空间感知搜索, 种群多样性与二维交叉]
+      - [XGBoost 预测, 候选结构排序]
+      - [电磁验证, 评估预测最优候选]
+    feedback: 验证结果回写数据库，进入下一轮搜索。
+e-gaspad:
+  en:
+    steps:
+      - [Parameterized layout, EM + harmonic-balance evaluations]
+      - [Local and global search, Differential-evolution operators]
+      - [Local BNN models, Uncertainty-aware prescreening]
+      - [Validate and diversify, Simulate + reconstruct the population]
+    feedback: Local refinement improves candidates; population reconstruction preserves search diversity.
+  zh-CN:
+    steps:
+      - [参数化版图, 电磁与谐波平衡仿真]
+      - [局部与全局搜索, 差分进化算子]
+      - [局部 BNN 建模, 基于不确定性的预筛选]
+      - [验证与种群重构, 仿真评估并保持多样性]
+    feedback: 局部搜索改进候选性能，种群重构降低过早收敛的风险。
+lads:
+  en:
+    steps:
+      - [Identify solids, Interpret descriptions and figures]
+      - [Define solids, Dimensions, parameters and materials]
+      - [Execute macros, Build and check the CST model]
+      - [Optimize parameters, Configure and run SB-SADEA]
+    feedback: Engineers inspect intermediate artifacts and review design changes.
+  zh-CN:
+    steps:
+      - [识别实体, 解析文献描述与图像]
+      - [定义实体, 尺寸、参数与材料]
+      - [执行宏脚本, 构建并检查 CST 模型]
+      - [参数优化, 配置与运行 SB-SADEA]
+    feedback: 工程师检查中间文件并审查结构修改。
+mrr-ssg:
+  en:
+    steps:
+      - [Phase-shift candidates, Initialize the grating design variables]
+      - [Evolutionary search, Self-adaptive differential evolution]
+      - [Spectral evaluation, Evaluate and select candidate profiles]
+      - [Memetic refinement, Occasional SQP on the full population]
+    feedback: Local refinement is embedded in the evolutionary loop; stop when the termination criterion is met.
+  zh-CN:
+    steps:
+      - [相移候选, 初始化光栅设计变量]
+      - [进化搜索, 自适应差分进化]
+      - [光谱评估, 评估并选择候选相移分布]
+      - [Memetic 精修, 间歇对整个种群执行 SQP]
+    feedback: 局部精修嵌入进化循环，满足终止条件后输出结果。

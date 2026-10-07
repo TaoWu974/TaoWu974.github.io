@@ -1,0 +1,22 @@
+{% assign source = site.data.paper_sources[page.paper_url] %}
+{% if source %}
+  <aside class="paper-source" aria-label="{% if page.lang == 'zh-CN' %}论文出处{% else %}Publication source{% endif %}">
+    <p>
+      {{ source.authors }}
+      <a href="{{ page.paper_url }}">{{ source.title }}</a>. <em>{{ source.venue }}</em>.
+    </p>
+    <p>
+      {% if source.supplied_pdf and page.lang == 'zh-CN' -%}
+        场景图提取自作者提供的正式出版稿（图 1）；流程图为方法概要重绘。完整论文见出版链接。
+      {%- elsif source.supplied_pdf -%}
+        Scenario illustration cropped from the author-supplied published paper (Fig. 1); the method flow is a redrawn summary. See the publisher link
+        for the full paper.
+      {%- elsif page.lang == 'zh-CN' -%}
+        图片提取自 ePrints 接收稿，保留原始坐标轴与图例；流程图为方法概要重绘。原文与授权说明见论文记录。
+      {%- else -%}
+        Figures are cropped from the ePrints accepted manuscript with the original axes and legends retained; method diagrams are redrawn summaries.
+        See the publication record for the manuscript and reuse terms.
+      {%- endif %}
+    </p>
+  </aside>
+{% endif %}

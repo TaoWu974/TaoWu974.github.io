@@ -1,0 +1,49 @@
+- title: Game theory meets reinforcement learning
+  description: Strategic interaction and learned pricing in a food-delivery experiment.
+  topic: Game theory & RL
+  kind: Project note
+  image: /assets/img/papers/edge-delivery-system.png
+  url: /blog/delivery-game/
+  interactive: EDGE 2022
+- title: LLM-assisted antenna design
+  description: Literature reconstruction, parameterized geometry and UWB optimization.
+  topic: LLMs
+  kind: Research walkthrough
+  image: /assets/img/papers/lads-h-slot.png
+  url: /projects/leam/
+  interactive: EuCAP 2026
+- title: Digitally coded antennas
+  description: A 1920-pixel prototype, measured response and geometry-aware search.
+  topic: Antennas
+  kind: Research walkthrough
+  image: /assets/img/papers/dc-prototype.png
+  url: /projects/pixel_antenna/
+  interactive: IEEE TAP 2025
+- title: Power amplifier optimization
+  description: Local BNN modeling, convergence and two layout-level case studies.
+  topic: Optimization
+  kind: Research walkthrough
+  image: /assets/img/papers/pa-doherty-layout.png
+  url: /projects/pa_project/
+  interactive: IEEE TMTT 2025
+- title: Equipment anomaly detection
+  description: Sensor data, statistical thresholds and early warnings.
+  topic: Industrial AI
+  kind: Project note
+  image: PCA_overall.png
+  url: /projects/fault_detection/
+  interactive: Application note
+- title: Tunable photonic filters
+  description: "My algorithm contribution: memetic optimization of grating phase shifts."
+  topic: Photonics
+  kind: Paper companion
+  image: /assets/img/papers/photonic-phase-results.png
+  url: /projects/photonic_filter/
+  interactive: ECOC 2025
+- title: Surrogate-assisted optimization
+  description: A visual introduction to sequential sampling and simulator validation.
+  topic: Optimization
+  kind: Explainer
+  image: BNNStructure.png
+  url: /blog/2025/plotly/
+  interactive: Method note

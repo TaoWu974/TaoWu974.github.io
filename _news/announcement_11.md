@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, An efficient and general automated power amplifier design method based on surrogate model assisted hybrid optimization technique, has been accepted by IEEE Transactions on Antenna and Propagation.
+Our paper, An efficient method for complex digitally coded antenna design based on evolutionary computation and machine learning techniques, has been accepted by IEEE Transactions on Antennas and Propagation.

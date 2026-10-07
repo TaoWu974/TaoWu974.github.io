@@ -325,3 +325,8 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+<script defer src="{{ '/assets/js/research.js' | relative_url | bust_file_cache }}"></script>
+<script defer src="{{ '/assets/js/scholar.js' | relative_url | bust_file_cache }}"></script>
+{% if page.interactive %}
+  <script defer src="{{ '/assets/js/research-demos.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}

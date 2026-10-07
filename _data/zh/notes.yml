@@ -1,0 +1,56 @@
+- title: 博弈与强化学习：配送定价
+  description: 用主从博弈描述策略互动，用强化学习调整报价。
+  topic: Game theory & RL
+  topic_label: 博弈论与强化学习
+  kind: 项目笔记
+  image: /assets/img/papers/edge-delivery-system.png
+  url: /blog/delivery-game/
+  interactive: EDGE 2022
+- title: 大语言模型辅助天线设计
+  description: 文献复现、参数化建模与超宽带天线优化。
+  topic: LLMs
+  topic_label: 大语言模型
+  kind: 研究解读
+  image: /assets/img/papers/lads-h-slot.png
+  url: /projects/leam/
+  interactive: EuCAP 2026
+- title: 数字编码天线
+  description: 1920 像素样机、实测响应与空间感知搜索。
+  topic: Antennas
+  topic_label: 天线
+  kind: 研究解读
+  image: /assets/img/papers/dc-prototype.png
+  url: /projects/pixel_antenna/
+  interactive: IEEE TAP 2025
+- title: 功率放大器优化
+  description: 局部 BNN 建模、收敛性能与版图级验证。
+  topic: Optimization
+  topic_label: 优化
+  kind: 研究解读
+  image: /assets/img/papers/pa-doherty-layout.png
+  url: /projects/pa_project/
+  interactive: IEEE TMTT 2025
+- title: 设备异常检测与统计预警
+  description: 传感器数据、统计阈值与提前预警。
+  topic: Industrial AI
+  topic_label: 工业机器学习
+  kind: 项目笔记
+  image: PCA_overall.png
+  url: /projects/fault_detection/
+  interactive: 应用笔记
+- title: 可调谐光子滤波器
+  description: 负责优化算法：自适应差分进化与 memetic 局部精修。
+  topic: Photonics
+  topic_label: 光子学
+  kind: 论文解读
+  image: /assets/img/papers/photonic-phase-results.png
+  url: /projects/photonic_filter/
+  interactive: ECOC 2025
+- title: 代理模型辅助优化
+  description: 序贯采样、不确定性与仿真验证。
+  topic: Optimization
+  topic_label: 优化
+  kind: 原理笔记
+  image: BNNStructure.png
+  url: /blog/2025/plotly/
+  interactive: 方法笔记

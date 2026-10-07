@@ -1,0 +1,16 @@
+{% if site.enable_publication_badges.google_scholar and entry.google_scholar_id %}
+  {% assign scholar_paper = site.data.scholar.publications[entry.google_scholar_id] %}
+  <a
+    class="scholar-paper-badge"
+    data-scholar-paper="{{ entry.google_scholar_id }}"
+    href="https://scholar.google.com/citations?view_op=view_citation&amp;user={{ site.data.socials.scholar_userid }}&amp;citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
+    title="Google Scholar · {{ site.data.scholar.updated_at }}"
+    aria-label="{% if page.lang == 'zh-CN' %}Google Scholar 引用数{% else %}Google Scholar citations{% endif %}"
+  >
+    <i class="ai ai-google-scholar" aria-hidden="true"></i
+    ><span data-scholar-count>
+      {{- scholar_paper.citation_count | default: '—' -}}
+      {%- if scholar_paper.estimated %}*{% endif -%}
+    </span>
+  </a>
+{% endif %}

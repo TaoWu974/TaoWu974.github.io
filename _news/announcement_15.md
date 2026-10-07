@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, An Efficient Method for Complex Digitally Coded Antenna Design Based on Evolutionary Computation and Machine Learning Techniques, has been online. This paper demonstrates an advancement of pixelated antenna design in resolution (i.e., more than 2000) and specifications (i.e., more than 10).
+Our paper, An Efficient Method for Complex Digitally Coded Antenna Design Based on Evolutionary Computation and Machine Learning Techniques, is now online. This paper demonstrates an advancement of pixelated antenna design in resolution (i.e., more than 2000) and specifications (i.e., more than 10).

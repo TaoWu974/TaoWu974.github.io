@@ -1,0 +1,104 @@
+en:
+  name: Tao Wu
+  about: About me
+  research: Research
+  research_heading: Research areas
+  all_projects: All projects
+  get_in_touch: Get in touch
+  view_cv: View CV
+  publications: Publications
+  final_year: Final-year PhD
+  eyebrow: AI · RF design · Engineering
+  open_source: Open-source engineering
+  toolkit_text: LLM-enabled antenna modeling, with inspectable workflows for CST and HFSS. From a description or reference image to simulator-facing artifacts, with engineers guiding the process.
+  explore_code: Explore the code
+  walkthrough: Read the walkthrough
+  describe: Describe
+  model: Model
+  simulate: Simulate
+  refine: Refine
+  reference_images: Text + reference images
+  parameters: Geometry + parameters
+  scripts: CST / HFSS scripts
+  review: Review + optimization
+  news: News
+  latest_posts: Latest posts
+  selected_publications: Selected publications
+  behind_papers: Notes
+  writing_heading: Methods & perspectives
+  all_notes: All research notes
+  contact_note: Email is the best way to reach me about research and collaborations.
+  back_notes: Research notes
+  read_paper: Read the paper
+  code: Code
+  on_this_page: On this page
+  keep_exploring: Keep exploring
+  questions: Questions or ideas?
+  read_time: min read
+  interactive_included: Interactive illustration included
+  demo_label: Interactive illustration
+  demo_caption: Schematic teaching example. It illustrates the mechanism, not measured or simulated performance from the paper.
+  no_js: Enable JavaScript to use the illustration. The explanation and original figures below are available without it.
+  scholar_source: Google Scholar
+  citations: Citations
+  h_index: h-index
+  i10_index: i10-index
+  citation_trend: Citations by year
+  sync_note: Synced automatically every 6 hours after deployment. Counts reflect the latest successful snapshot.
+  last_synced: Last synced
+  refresh: Refresh display
+  profile: View Scholar profile
+  unavailable: Data is temporarily unavailable. Visit Google Scholar for the latest figures.
+  stale: Update delayed; showing the last successful snapshot.
+zh-CN:
+  name: 邬涛
+  about: 关于我
+  research: 研究方向
+  research_heading: 研究方向
+  all_projects: 全部项目
+  get_in_touch: 联系我
+  view_cv: 查看简历
+  publications: 论文发表
+  final_year: 博士四年级，预计于2027年毕业
+  eyebrow: 人工智能 · 射频设计 · 工程
+  open_source: 开源工程工具
+  toolkit_text: 基于大语言模型的天线建模工具，提供可检查的 CST 与 HFSS 工作流。从文字描述或参考图片生成面向仿真器的建模文件，并由工程师参与审查和迭代。
+  explore_code: 查看源代码
+  walkthrough: 阅读项目解读
+  describe: 描述
+  model: 建模
+  simulate: 仿真
+  refine: 改进
+  reference_images: 文字与参考图片
+  parameters: 几何与参数
+  scripts: CST / HFSS 脚本
+  review: 审查与优化
+  news: 最新动态
+  latest_posts: 最近文章
+  selected_publications: 精选论文
+  behind_papers: 研究笔记
+  writing_heading: 方法与应用
+  all_notes: 全部研究笔记
+  contact_note: 欢迎通过电子邮件交流研究与合作。
+  back_notes: 研究笔记
+  read_paper: 阅读论文
+  code: 源代码
+  on_this_page: 本文目录
+  keep_exploring: 继续阅读
+  questions: 有问题或新的想法？
+  read_time: 分钟阅读
+  interactive_included: 含交互式原理演示
+  demo_label: 交互式原理演示
+  demo_caption: 本图用于解释方法原理，不代表论文中的实测或仿真结果。
+  no_js: 启用 JavaScript 后可以操作交互图；下方正文与原始图片不受影响。
+  scholar_source: Google Scholar
+  citations: 总引用
+  h_index: h 指数
+  i10_index: i10 指数
+  citation_trend: 年度引用趋势
+  sync_note: 部署后每 6 小时自动同步，数值来自最近一次成功获取的数据。
+  last_synced: 最近同步
+  refresh: 刷新显示
+  profile: 查看 Scholar 主页
+  unavailable: 暂时无法获取数据，可前往 Google Scholar 查看最新指标。
+  stale: 同步有所延迟，目前显示上次成功获取的数据。

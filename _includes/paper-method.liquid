@@ -1,0 +1,15 @@
+{% assign locale = page.lang | default: site.lang %}
+{% assign method = site.data.paper_methods[include.paper][locale] %}
+<figure class="paper-method">
+  <ol>
+    {% for step in method.steps %}
+      <li>
+        <span class="method-number">0{{ forloop.index }}</span><strong>{{ step[0] }}</strong><span>{{ step[1] }}</span>
+      </li>
+    {% endfor %}
+  </ol>
+  <figcaption>
+    ↻ {{ method.feedback }}
+    {% if locale == 'zh-CN' %}流程按论文方法重构。{% else %}Method summary redrawn from the paper.{% endif %}
+  </figcaption>
+</figure>

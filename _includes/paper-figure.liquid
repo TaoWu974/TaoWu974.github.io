@@ -1,0 +1,16 @@
+<figure
+  class="paper-figure"
+  {% if include.max_width %}
+    style="max-width: {{ include.max_width }}; margin-left: auto; margin-right: auto;"
+  {% endif %}
+>
+  <a href="{{ include.source }}" aria-label="{% if page.lang == 'zh-CN' %}查看论文原图{% else %}View figure in the paper{% endif %}"
+    ><img src="{{ include.asset | prepend: '/assets/img/papers/' | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy" decoding="async"
+  ></a>
+  <figcaption>
+    {{ include.caption }}
+    <a href="{{ include.source }}">
+      {%- if page.lang == 'zh-CN' %}论文图 {{ include.number }}{% else %}Paper Fig. {{ include.number }}{% endif %} ↗</a
+    >
+  </figcaption>
+</figure>

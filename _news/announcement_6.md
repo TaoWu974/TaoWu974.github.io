@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm happy to share that I will return University of Glasgow for PhD in 2023 fall.
+I'm happy to share that I will return to the University of Glasgow for a PhD in autumn 2023.
