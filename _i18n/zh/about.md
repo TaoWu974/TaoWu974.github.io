@@ -7,4 +7,6 @@ description: 邬涛，格拉斯哥大学电子工程博士生，研究人工智�
 
 格拉斯哥大学电子工程博士生，导师为 [Bo Liu 教授](https://www.gla.ac.uk/schools/engineering/staff/boliu/)。获格拉斯哥大学及电子科技大学电子工程学士学位、佐治亚理工学院计算机科学硕士学位，曾任 MathWorks 研究实习生。
 
-研究方向为**人工智能辅助射频设计与优化**，重点包括小样本代理建模、高维天线结构优化，以及大语言模型辅助建模与仿真。相关研究发表于 IEEE TAP、IEEE TMTT、EuCAP 和 ECOC；开源工具 [LEAM](https://github.com/TaoWu974/LEAM) 支持天线设计工作流。
+研究方向为**人工智能辅助射频设计与优化**，重点包括小样本代理建模、高维天线结构优化，以及大语言模型辅助建模与仿真。相关研究发表于 IEEE TAP、IEEE TMTT、EuCAP 和 ECOC。
+
+近期研究聚焦两个方向：一是面向射频设计的智能体与可复用 skill（[论文](https://arxiv.org/abs/2504.18271) · [开源代码](https://github.com/TaoWu974/LEAM)）；二是结合大语言模型与电磁知识，发展专用计算方法，牵引解决卫星通信像素设计、PCB 电源与信号完整性分析等问题。
